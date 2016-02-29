@@ -1,0 +1,13 @@
+<ion-view view-title="🍻Here are your beer choices🍻">
+  <ion-content>
+    <ion-list>
+    <div >
+      <ion-item ng-repeat="playlist in playlists" ng-href="#/app/beers/{{playlist.id}}">
+      <img ng-src="{{playlist.image.icon}}" class="img-thumbnail" alt= "🍺" width="75" height="50"/>
+     
+      {{playlist.title}}
+      
+   
+    </ion-list>
+  </ion-content>
+</ion-view>
